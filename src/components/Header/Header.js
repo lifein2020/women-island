@@ -11,7 +11,14 @@ import yulya from "../../images/yulya.png";
 import arrow_right from "../../images/arrow_right.svg";
 import telegram from "../../images/telegram.svg";
 import instagram from "../../images/instagram.svg";
-
+import room from "../../images/room.png";
+import window from "../../images/window.png";
+import cooking from "../../images/cooking.png";
+import cups from "../../images/cups.png";
+import girls from "../../images/girls.png";
+import lecture from "../../images/lecture.png";
+import win from "../../images/win.jpg";
+import a from "../../images/a.jpg";
 
 function Header(props) {
     return(
@@ -219,6 +226,45 @@ function Header(props) {
                         </li>
                     </ul>
                 </section>
+                <section className="gallery">
+                    <h2 className="section-title">наши встречи</h2>
+                    <div className="photo-grid">
+                        <div className="block photo-grid-item-size-big">
+                        </div>
+                        <div className="block block2">
+                        </div>
+                        {/* <div className="item">
+                            <img className="photo-grid-item" src={girls} alt=""/>
+                        </div> */}
+                        <div className="item">
+                            <img className="photo-grid-item" src={a} alt=""/>
+                        </div>
+                        <div className="item">
+                            <img className="photo-grid-item" src={girls} alt=""/>
+                        </div>
+                        <div className="item item-size-big">
+                            <img className="photo-grid-item" src={win} alt=""/>
+                        </div>
+                        <div className="item">
+                            <img className="photo-grid-item" src={girls} alt=""/>
+                        </div>
+                        <div className="item">
+                            <img className="photo-grid-item" src={girls} alt=""/>
+                        </div>
+                        <div className="item">
+                            <img className="photo-grid-item " src={lecture} alt=""/>
+                        </div>
+                        <div className="item item-size-large">
+                            <img className="photo-grid-item item-size-large" src={cups} alt=""/>
+                        </div>
+                        
+                        {/* <img className="photo-grid-item" src={cups} alt=""/>
+                        <img className="photo-grid-item" src={cooking} alt=""/>
+                        <img className="photo-grid-item" src={window} alt=""/>
+                        <img className="photo-grid-item" src={lecture} alt=""/>
+                        <img className="photo-grid-item" src={girls} alt=""/> */}
+                    </div>
+                </section>
                 <section className="apply">
                     <div className="wrap">
                         <div className="card">
@@ -344,7 +390,7 @@ function Header(props) {
                             <a href="https://www.instagram.com/ostrovwomen/" target="_blank" rel="noreferrer" className="socialmedia-link">
                                 <img src={instagram} className="socialmedia-icon" alt="instagram"/>
                             </a>
-                            <a href="https://www.gesy.org.cy/sites/Sites?d=Desktop&locale=en_US&lookuphost=/en-us/&lookuppage=home-en" target="_blank" rel="noreferrer" className="socialmedia-link">
+                            <a href="tg://join?invite=2323804135/1" target="_blank" rel="noreferrer" className="socialmedia-link">
                                 <img src={telegram} className="socialmedia-icon" alt="telegram"/>
                             </a>
                         </div>

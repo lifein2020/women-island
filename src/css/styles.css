@@ -317,6 +317,49 @@
 .main .program .program-items .program-item:last-child {
   margin-bottom: 0;
 }
+.main .gallery {
+  padding: 100px 0 100px;
+  text-align: center;
+}
+.main .gallery .photo-grid {
+  margin: 50px auto;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 200px);
+}
+.main .gallery .photo-grid .photo-grid-item-size-big {
+  grid-row: 1/3;
+}
+.main .gallery .photo-grid .block {
+  background-color: rgb(116, 174, 194);
+  min-width: 100%;
+  min-height: 100%;
+  background: center no-repeat url(../images/room.png);
+  background-size: cover;
+  border-radius: 30px;
+}
+.main .gallery .photo-grid .block2 {
+  background: center no-repeat url(../images/a.jpg);
+  background-size: cover;
+}
+.main .gallery .photo-grid .item {
+  background-color: rgb(116, 174, 194);
+  min-width: 100%;
+  min-height: 100%;
+  border-radius: 30px;
+}
+.main .gallery .photo-grid .item .photo-grid-item {
+  max-width: 100%;
+  height: 200px;
+  border-radius: 30px;
+}
+.main .gallery .photo-grid .item-size-big {
+  grid-row: 2/4;
+}
+.main .gallery .photo-grid .item-size-large {
+  grid-column: 2/4;
+}
 .main .apply {
   margin: auto;
   padding: 100px 0 100px;
