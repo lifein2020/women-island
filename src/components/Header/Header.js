@@ -1,7 +1,11 @@
 // import { Route, Link } from 'react-router-dom';
 import logo from "../../images/logo1.svg";
 import arrow_down from "../../images/arrow_down.svg";
-import chat from "../../images/chat.svg";
+import lotus2 from "../../images/lotus2.svg";
+import community from "../../images/community.svg";
+import art from "../../images/art.svg";
+import magic1 from "../../images/magic1.svg";
+import care1 from "../../images/care1.svg";
 import star from "../../images/star.svg";
 import women from "../../images/women.svg";
 import sun from "../../images/sun.svg";
@@ -19,6 +23,10 @@ import girls from "../../images/girls.png";
 import lecture from "../../images/lecture.png";
 import win from "../../images/win.jpg";
 import a from "../../images/a.jpg";
+import sea from "../../images/sea.jpg";
+import paint from "../../images/paint.png";
+import mappoint from "../../images/mappoint.svg";
+
 
 function Header(props) {
     return(
@@ -81,31 +89,35 @@ function Header(props) {
                     <p className="section-subtitle">если ты хочешь</p>
                     <ul className="foryou-cards">
                         <li className="foryou-cards-item">
-                            <img className="foryou-card-image" src={chat} alt=""/>
+                            <img className="foryou-card-image" src={lotus2} alt=""/>
                             <h3 className="foryou-card-title">Перезагрузку</h3>
                             <p className="foryou-card-description">Раскрытие женственности, запуск энергии, внутренняя гармония с помощью экологичных практик.</p>
                         </li>
                         <li className="foryou-cards-item">
-                            <img className="foryou-card-image" src={chat} alt=""/>
+                            <img className="foryou-card-image" src={community} alt=""/>
                             <h3 className="foryou-card-title">Окружение</h3>
                             <p className="foryou-card-description">Пусть в нашем пространстве тебе будет вкусно, уютно, безопасно.</p>
                         </li>
                         <li className="foryou-cards-item">
-                            <img className="foryou-card-image" src={chat} alt=""/>
+                            <img className="foryou-card-image" src={art} alt=""/>
                             <h3 className="foryou-card-title">Творчество</h3>
                             <p className="foryou-card-description">Окунуться в творческий поток, насладиться процессом и раскрыть в себе новые таланты.</p>
                         </li>
-                        <li className="foryou-cards-item">
-                            <img className="foryou-card-image" src={chat} alt=""/>
-                            <h3 className="foryou-card-title">Идеи и 
-                            вдохновение</h3>
-                            <p className="foryou-card-description">Здесть вы всегда найдёте вдохновение и мотивацию, чтобы меняться и делать свою жизнь ярче.</p>
+                        {/* <li className="foryou-cards-item-container">
+                            <ul className="foryou-cards"> */}
+                                <li className="foryou-cards-item">
+                                    <img className="foryou-card-image" src={magic1} alt=""/>
+                                    <h3 className="foryou-card-title">Идеи и вдохновение</h3>
+                                    <p className="foryou-card-description">Здесть вы всегда найдёте вдохновение и мотивацию, чтобы меняться и делать свою жизнь ярче.</p>
+                                </li>
+                                <li className="foryou-cards-item">
+                                    <img className="foryou-card-image" src={care1} alt=""/>
+                                    <h3 className="foryou-card-title">Поддержку единомышленниц</h3>
+                                    <p className="foryou-card-description">Подруги по интересам, с которыми всегда есть время и желание для встречи.</p>
+                                {/* </li>
+                            </ul> */}
                         </li>
-                        <li className="foryou-cards-item">
-                            <img className="foryou-card-image" src={chat} alt=""/>
-                            <h3 className="foryou-card-title">Поддержку единомышленниц</h3>
-                            <p className="foryou-card-description">Подруги по интересам, с которыми всегда есть время и желание для встречи.</p>
-                        </li>
+
                     </ul>
                 </section>
                 <section className="benefits">
@@ -113,60 +125,59 @@ function Header(props) {
                     <p className="section-subtitle">в течение месяца ты можешь посещать разные мероприятия, события, встречи</p>
                     <ul className="benefits-cards">
                         <li className="benefits-cards-item">
-                            <div className="card-text">
+                            <div className="card-text paint">
                                 <h3 className="card-title">Творческие мастер-классы</h3>
-                                <p className="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p className="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                             </div>
-                            <img className="card-image" src={star} alt="star"/>
                         </li>
                         <li className="benefits-cards-item">
-                            <div className="card-text">
+                            <div className="card-text cup">
+                                <h3 className="card-title">Звуковая терапия</h3>
+                                <p className="card-description">Lorem ipsum dolor sit amet, consectetur.Lorem ipsum dolor sit amet, consectetur.</p>
+                            </div>
+                            {/* <img className="card-image" src={star} alt="star"/> */}
+                        </li>
+                        <li className="benefits-cards-item">
+                            <div className="card-text psychology">
                                 <h3 className="card-title">Психология</h3>
                                 <p className="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
-                            <img className="card-image" src={star} alt="star"/>
+                            {/* <img className="card-image" src={star} alt="star"/> */}
                         </li>
                         <li className="benefits-cards-item">
-                            <div className="card-text">
+                            <div className="card-text aromo">
                                 <h3 className="card-title">Аромопсихология</h3>
                                 <p className="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
-                            <img className="card-image" src={star} alt="star"/>
+                            {/* <img className="card-image" src={star} alt="star"/> */}
                         </li>
                         <li className="benefits-cards-item">
-                            <div className="card-text">
-                                <h3 className="card-title">Звуковая терапия</h3>
-                                <p className="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                            <img className="card-image" src={star} alt="star"/>
-                        </li>
-                        <li className="benefits-cards-item">
-                            <div className="card-text">
+                            <div className="card-text book">
                                 <h3 className="card-title">Книжный клуб</h3>
                                 <p className="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
-                            <img className="card-image" src={star} alt="star"/>
+                            {/* <img className="card-image" src={star} alt="star"/> */}
                         </li>
                         <li className="benefits-cards-item">
-                            <div className="card-text">
+                            <div className="card-text practise">
                                 <h3 className="card-title">Полезные и развивающие практики</h3>
                                 <p className="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
-                            <img className="card-image" src={star} alt="star"/>
+                            {/* <img className="card-image" src={star} alt="star"/> */}
                         </li>
                         <li className="benefits-cards-item">
-                            <div className="card-text">
+                            <div className="card-text master">
                                 <h3 className="card-title">Приглашенные мастера</h3>
                                 <p className="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
-                            <img className="card-image" src={star} alt="star"/>
+                            {/* <img className="card-image" src={star} alt="star"/> */}
                         </li>
                         <li className="benefits-cards-item">
-                            <div className="card-text">
+                            <div className="card-text stream">
                                 <h3 className="card-title">Тематические эфиры</h3>
                                 <p className="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
-                            <img className="card-image" src={star} alt="star"/>
+                            {/* <img className="card-image" src={star} alt="star"/> */}
                         </li>
                     </ul>
                     <button className="benefits-button">хочу к вам</button>
@@ -225,6 +236,7 @@ function Header(props) {
                             <p className="program-item-price">Участие 30&euro;</p>
                         </li>
                     </ul>
+                    <button className="benefits-button">зарегистрироваться</button>
                 </section>
                 <section className="gallery">
                     <h2 className="section-title">наши встречи</h2>
@@ -257,12 +269,25 @@ function Header(props) {
                         <div className="item item-size-large">
                             <img className="photo-grid-item item-size-large" src={cups} alt=""/>
                         </div>
-                        
+                                                
                         {/* <img className="photo-grid-item" src={cups} alt=""/>
                         <img className="photo-grid-item" src={cooking} alt=""/>
                         <img className="photo-grid-item" src={window} alt=""/>
                         <img className="photo-grid-item" src={lecture} alt=""/>
                         <img className="photo-grid-item" src={girls} alt=""/> */}
+                    </div>
+                </section>
+                <section className="testimonial">
+                    <h2 className="section-title">что о нас говорят</h2>
+                    <div className="slide"> 
+                        <p className="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div className="slide-container">
+                            <div className="slide-container-avatar"></div>
+                            <div className="slide-container-person">
+                                <h3 className="slide-container-person-name">Имя ревьюера</h3>
+                                <p className="slide-container-person-business">род деятельности</p>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <section className="apply">
@@ -302,7 +327,7 @@ function Header(props) {
                             </a>
                             <h3 className="card-title">Оля</h3>
                             <p className="card-subtitle">Арттерапевт</p>
-                            <p className="card-description">Оля очень творческая. Она создает атмосферные свечи, уникальные изделия и картины из эпоксидной смолы. <a href="https://www.instagram.com/elle_art_cyprus/" className="cards-item-link" target="_blank" rel="noreferrer">&rarr;</a>
+                            <p className="card-description">Оля очень творческая. Она создает атмосферные свечи, уникальные изделия и картины из эпоксидной смолы. <a href="https://www.instagram.com/elle_art_cyprus/" className="card-description-link" target="_blank" rel="noreferrer">&rarr;</a>
                             </p>
                         </li>
                         <li className="cards-item">
@@ -312,7 +337,7 @@ function Header(props) {
                             <h3 className="card-title">Юля</h3>
                             <p className="card-subtitle">Психолог</p>
                             <p className="card-description">
-                            Юля очень любит людей, помогает им возвращаться на свой путь и кайфует от своей работы. А еще она проводник женщин к самим себе. <a href="https://www.instagram.com/yuliya.arzhaan/" className="cards-item-link" target="_blank" rel="noreferrer">&rarr;</a>
+                            Юля очень любит людей, помогает им возвращаться на свой путь и кайфует от своей работы. А еще она проводник женщин к самим себе. <a href="https://www.instagram.com/yuliya.arzhaan/" className="card-description-link" target="_blank" rel="noreferrer">&rarr;</a>
                             </p>
                         </li>
                         <li className="cards-item">
@@ -321,14 +346,29 @@ function Header(props) {
                             </a>
                             <h3 className="card-title">Даша</h3>
                             <p className="card-subtitle">Звукотерапевт</p>
-                            <p className="card-description">Даша наша вдохновительница. Она создает для нас уникальные медитации, умеет управлять пространством и миром звуков. <a href="https://www.instagram.com/yuliya.arzhaan/" className="cards-item-link" target="_blank" rel="noreferrer">&rarr;</a>
+                            <p className="card-description">Даша наша вдохновительница. Она создает для нас уникальные медитации, умеет управлять пространством и миром звуков. <a href="https://www.instagram.com/yuliya.arzhaan/" className="card-description-link" target="_blank" rel="noreferrer">&rarr;</a>
                             </p>
                         </li>
                     </ul>
                 </section>
                 <section className="faq">
-                    <ul className="faq-items">
                     <h2 className="section-title">faq</h2>
+                        <details className="panel">
+                            <summary className="question">Какой формат участия в мероприятиях клуба?</summary>
+                            <p className="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                        </details>
+                        <details className="panel">
+                            <summary className="question">Как оплатить участие в мероприятии?</summary>
+                            <p className="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                        </details>
+                        <details className="panel">
+                            <summary className="question">Что входит в стоимость участия в мероприятии?</summary>
+                            <p className="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                        </details>
+                </section>
+                {/* <section className="faq-1">
+                    <ul className="faq-items">
+                        <h2 className="section-title">faq</h2>
                         <li className="faq-item">
                             <div className="container">
                                 <p className="faq-item-title">Какой формат участия в мероприятиях клуба?
@@ -362,10 +402,10 @@ function Header(props) {
                             <p className="faq-item-text"></p>
                         </li>
                     </ul>
-                </section>
+                </section> */}
                 <section className="connection">
                     <h2 className="section-title">будем на связи</h2>
-                    <div className="card card-position">
+                    <div className="card card-position animate">
                             <div className="container">
                                 <h3 className="container-title">Присоединяйтесь 
                                 к телеграм-каналу</h3>
@@ -376,28 +416,37 @@ function Header(props) {
                                     </a>
                                 </div>
                             </div>
-                        <img className="container-image" src={telegram} alt="telegram"/>
+                        <img className="container-image container-image-small" src={telegram} alt="telegram"/>
                     </div>
                 </section>
             </main>
             <footer className="footer">
+                {/* <img src={sea} className="footer-image" alt="sea"/> */}
+                <div className="footer-image"></div>
                 <div className="footer-container">
                     <h2 className="section-title">напишите, если остались вопросы:</h2>
                         <address className="email">
                             <a className="email-name" href="mailto:webmaster@gmail.com">webmaster@gmail.com</a>
                         </address>
                         <div className="socialmedia">
-                            <a href="https://www.instagram.com/ostrovwomen/" target="_blank" rel="noreferrer" className="socialmedia-link">
-                                <img src={instagram} className="socialmedia-icon" alt="instagram"/>
+                            <a href="https://www.instagram.com/ostrovwomen/" target="_blank" rel="noreferrer" className="socialmedia-link-icon instagram">
+                                {/* <img src={instagram} className="socialmedia-icon" alt="instagram"/> */}
                             </a>
-                            <a href="tg://join?invite=2323804135/1" target="_blank" rel="noreferrer" className="socialmedia-link">
-                                <img src={telegram} className="socialmedia-icon" alt="telegram"/>
+                            <a href="tg://join?invite=2323804135/1" target="_blank" rel="noreferrer" className="socialmedia-link-icon telegram">
+                                {/* <img src={telegram} className="socialmedia-icon" alt="telegram"/> */}
                             </a>
                         </div>
                         <address className="address">
-                            <p className="address-title">Наша локация:</p>
-                            <a href="http://maps.google.com/?q=34.705528, 33.078694" target="_blank"  className="address-name"> Box 564, Disneyland<br/>
-                            USA</a>
+                            <p className="address-title">
+                                Наша локация:
+                            </p>
+                            <div className="address-container">
+                                <a href="http://maps.google.com/?q=34.705528, 33.078694" target="_blank" rel="noreferrer" className="address-link-icon">
+                                </a>
+                                <a href="http://maps.google.com/?q=34.705528, 33.078694" target="_blank" rel="noreferrer" className="address-link">
+                                Box 564, Disneyland<br/>
+                                USA</a>
+                            </div>
                         </address>          
                         <img className="footer-logo" src={logo} alt="logo"/>
                 </div>
