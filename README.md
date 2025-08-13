@@ -1,6 +1,6 @@
 ## Product Card for Ecommerce App 
 
-[Project Link](women-isnand.vercel.app)
+[Project Link](https://women-isnand.vercel.app/)
 
 ### Designed and implemented a marketing landing UI with building a React components.
 
