@@ -1,0 +1,147 @@
+.footer {
+    text-align: center;
+    max-width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+
+    .footer-image-container {
+        height: 80%;
+        transform-style: preserve-3d;
+        z-index: -1;
+    }
+    .footer-image {
+        background: linear-gradient(to bottom, white, transparent), url(../../images/sea5.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        z-index: -1;
+        transform: translateZ(-10px) scale(2);
+    }
+    .footer-container {
+        position: relative;
+        width: 100%;
+        min-height: 400px;
+        padding: 70px 0 30px 0;
+        background-color: #DCC2E7;
+        text-align: center;
+        .email {
+            .email-name {
+                text-decoration: none;
+                font-family: Inter, Arial, sans-serif;
+                font-style: italic;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 45px;
+                color: black;
+                opacity: 1;
+                transition: opacity .1s ease-in;
+            }
+
+            .email-name:hover {
+                opacity: .6;
+            }
+        }
+        .socialmedia {
+            padding-top: 20px;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin: 0 auto;
+            max-width: 150px;
+            .socialmedia-link-icon {
+                text-decoration: none;
+                background-repeat: no-repeat;
+                background-size: contain;
+                transition: opacity .1s ease-in;
+            }
+            .instagram {
+                background-image: url(../../images/instagram.svg);
+                width: 60px;
+                height: 60px;
+            }
+            .telegram {
+                background-image: url(../../images/telegram.svg);
+                width: 48px;
+                height: 48px;
+            }
+            .socialmedia-link-icon:hover {
+                opacity: .6;
+                cursor: pointer;
+            }
+        }
+        .address {
+            .address-title {
+                margin: 0;
+                padding: 60px 0 20px;
+                font-family: Inter, Arial, sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 28px;
+                color: black;
+                text-decoration: none;
+            }
+            .address-container {
+                display: flex;
+                margin: 0 auto;
+                max-width: 275px;
+                transition: opacity .1s ease-in;
+                .address-link-icon {
+                    margin-top: 9px;
+                    padding-right: 35px;
+                    background-image: url(../../images/mappoint.svg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    max-width: 22px;
+                    max-height: 22px;
+                }
+                .address-link {
+                    font-family: Inter, Arial, sans-serif;
+                    font-style: italic;
+                    font-weight: 300;
+                    font-size: 24px;
+                    line-height: 40px;
+                    color: black;
+                    text-decoration: none;
+                    opacity: 1;
+                }
+            }
+            .address-container:hover {
+                opacity: 0.6;
+                cursor: pointer;
+            }
+        }
+    
+        .footer-logo {
+            position: absolute;
+            top: 12%;
+            left: 2%;
+            max-width: 400px;
+            max-height: 400px;
+        }
+        .arrow {
+            position: absolute;
+            top: 15%;
+            left: 90%;
+            z-index: 1;
+        }
+        .arrow:hover{
+            cursor: pointer;
+            opacity: 0.6;
+            transition: opacity .3s;
+            animation: translate 2s infinite linear normal;
+        }
+    }
+    .copyright {
+        font-family: 'Inter', Arial, sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 20px; 
+    }
+}

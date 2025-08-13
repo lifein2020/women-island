@@ -1,0 +1,83 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 100px;
+    margin: auto;
+    padding: 0;
+    .cards-item {
+        margin: auto;
+        padding-top: 80px;
+        max-width: 280px;
+        width: 100%;
+        list-style-type: none;
+        .cards-item-link {
+            text-decoration: none;
+            display: block;
+            margin: auto;
+            width: 170px;
+            height: 170px;
+            border-radius: 100%;
+            cursor: auto;
+            overflow: hidden;
+            .card-title-img {
+                display: inline;
+                color: black;
+            }
+            .card-image {
+                // padding: 0 40px 0;
+                width: 170px;
+                height: 170px;
+                filter: brightness(0.9);
+                cursor: pointer;
+            }
+            .card-image:hover {
+                transform: scale(1.1, 1.1);
+                transition: transform 1s ease-in-out;
+                border-radius: 100%;
+            }
+        }
+        .card-title {
+            margin: 30px 0 5px;
+            text-align: center;
+            font-family: Inter, Arial, Helvetica, sans-serif;
+            line-height: 1.15;
+            font-size: 24px;
+            font-weight: 500;
+            font-style: normal;
+        }
+        .card-subtitle {
+            margin: 0;
+            padding-bottom: 20px;
+            text-align: center;
+            font-family: Inter, Arial, Helvetica, sans-serif;
+            line-height: 23px;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+        .card-description {
+            margin: 0 auto;
+            max-width: 255px;
+            text-align: left;
+            font-family: Inter, Arial, Helvetica, sans-serif;
+            line-height: 20px;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            .card-description-link {
+                text-decoration: none;
+                margin-left: 5px;
+                color: #e9ae63;
+                opacity: 1;
+                transition: opacity .1s ease-in;
+                font-family: 'Helvetica Neue', Arial, sans-serif;
+                font-size: 20px;
+            }
+            .card-description-link:hover {
+                opacity: .6;
+                color: #a34eca;
+            }
+        }
+    }
+}

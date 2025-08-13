@@ -1,14 +1,16 @@
-import '../../styles/App.css';
+import "../../styles/styles.scss";
 import Header from '../Header/Header';
-// import Main from '../Main/Main';
-// import Footer from '../Footer/Footer';
-
+import Main from '../Main/Main';
+import Footer from '../Footer/Footer';
+import Menu from '../Menu/Menu';
+ 
 function App() {
   return (
-    <div className="App">
+    <div id="app" className="App">
+      <Menu/>
       <Header/>
-      {/* <Main/>
-      <Footer/> */}
+      <Main/>
+      <Footer/>
     </div>
   );
 }

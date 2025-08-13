@@ -1,0 +1,89 @@
+.slider-container {
+    margin: 40px auto 0;
+    padding-left: 14px;
+    height: 500px;
+    .slide {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 30px 30px 50px;
+      max-width: 260px;
+      height: 340px;
+      border: 1px solid rgb(201, 197, 197);
+      border-radius: 30px;
+      user-select: none;
+      .slide-text {
+        margin: 0;
+        text-align: left;
+        font-family: Inter, Arial, Helvetica, sans-serif;
+        line-height: 22px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+      }
+      .slide-container {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        text-align: left;
+        .slide-container-avatar {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+        .slide-container-person {
+          padding-top: 20px;
+          .slide-container-person-name {
+            margin: 0;
+            padding-bottom: 7px;
+            font-family: Inter, Arial, Helvetica, sans-serif;
+            line-height: 22px;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+          }
+          .slide-container-person-position {
+            margin: 0;
+            font-family: Inter, Arial, Helvetica, sans-serif;
+            line-height: 22px;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            opacity: 50%;
+          }
+        }
+      }
+    }
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: left;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #F9D19D;
+    opacity: 0.4;
+}
+.swiper-pagination-bullet-active {
+    width: 32px;
+    border-radius: 14px;
+    transition: all 0.8s ease-in-out;
+    opacity: 1;
+}
+.swiper-slide-active {
+    background-color: #DCC2E7;
+    transition: all 0.8s ease-in-out;
+}
+

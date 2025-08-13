@@ -1,0 +1,171 @@
+.header {
+    // @media (min-width: 768px) {
+    //     .header{
+    //       max-width: calc(100% - 180px);
+    //     }
+    //   }
+      
+    //   @media (min-width: 1024px) {
+    //     .header{
+    //       max-width: calc(100% - 144px);
+    //     }
+    //   }
+      
+    //   @media (min-width: 1280px) {
+    //     .header{
+    //       max-width: calc(100% - 400px);
+    //     }
+    //   }
+
+    .header-illustration {
+        position: relative;
+        // display: flex;
+        margin: auto;
+        // margin-top: 10px;
+        // padding-bottom: 35%; /*от ширины родительского элемента*/
+        // height: 85vh;
+        max-width: 100%;
+        height: 75vh;
+        // height: 18vh;
+        // display: block;
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+        // width: 100%;
+        // height: 100%;
+        // z-index: 1;
+        background-image: url(../../images/page_cover9.png);
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        color: inherit;
+
+        .header-text {
+            // display: block;
+            align-content: center;
+            // position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            // text-align: center;
+            // align-self: center;
+            color: white;
+            .header-title {
+                // display: inline-block;
+                width: 80%;
+                // margin: 270px auto 35px;
+                margin: 0 auto 35px;
+                // max-width: 288px;
+                max-width: 510px;
+                font-family: 'Inter', Arial, sans-serif;
+                font-style: italic;
+                font-weight: 400;
+                font-size: 64px;
+                line-height: 35px;
+                white-space: pre-line;
+            }
+            .header-subtitle {
+                // display: inline-block;
+                width: 80%;
+                margin: auto;
+                max-width: 710px;
+                font-family: Inter, Arial, sans-serif;
+                font-style: italic;
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 30px;
+            }
+            @media (max-width: 820px) {
+               .header-title {
+                  display: inline-block;
+                  margin-top: 0;
+                  font-size: 34px;
+               }
+               .header-subtitle {
+                display: inline-block;
+                max-width: 510px;
+                font-size: 20px;
+                line-height: 25px;
+               }
+            }
+        }
+        @media (max-width: 820px) {
+            .header-text {
+                position: absolute;
+            }
+        }
+
+        @keyframes translate {
+            0% {
+                transform: translate(0px, 0px);
+            }
+            50% {
+                transform: translate(0, 20px);
+            }
+            100% {
+                transform: translate(0px, 0px);
+            }
+        }
+        .arrow {
+            position: absolute;
+            top: 80%;
+            left: 90%;
+            z-index: 1;
+            .arrow-icon {
+                max-width: 100px;
+                max-height: 100px;
+            }
+            @media (max-width: 1280px) {
+                .arrow-icon {
+                    max-width: 80px;
+                    max-height: 80px;
+                }
+            }
+            @media (max-width: 1024px) {
+                .arrow-icon {
+                    max-width: 70px;
+                    max-height: 70px;
+                }
+            }
+            @media (max-width: 767px) {
+                .arrow-icon {
+                    max-width: 50px;
+                    max-height: 50px;
+                }
+            }
+        }
+        @media (max-width: 1280px) {
+            .arrow {
+                top: 80%;
+                left: 90%;
+            }
+        }
+        @media (max-width: 1024px) {
+            .arrow {
+                top: 90%;
+                left: 88%;
+            }
+        }
+        @media (max-width: 767px) {
+            .arrow {
+                top: 88%;
+                left: 80%;
+            }
+        }
+        .arrow:hover{
+            cursor: pointer;
+            opacity: 0.6;
+            transition: opacity .3s;
+            animation: translate 2s infinite linear normal;
+        }
+    }
+    @media (max-width: 820px) {
+        .header-illustration {
+            padding-bottom: 45%;
+            height: 45vh;
+        }
+    }
+   
+}

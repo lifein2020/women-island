@@ -1,0 +1,175 @@
+.benefits-cards {
+    margin: auto;
+    padding: 60px 0 17px;
+    display: grid;
+    // grid-template-columns: repeat(2, 505px);
+    // grid-template-rows: repeat(4, 230px);
+    grid-template-columns: repeat(auto-fill, minmax(505px, max-content));
+    // display: flex;
+    // flex-wrap: wrap;
+    gap: 30px;
+    .benefits-cards-item {
+        // display: flex;
+        // gap: 20px;
+        max-width: 505px;
+        height: 230px;
+        list-style-type: none;
+        border-radius: 30px;
+        position: relative;
+        overflow: hidden;
+        .card-text-box {
+            max-width: 505px;
+            // width: 505px;
+            height: 230px;
+            // height: 100%;
+            text-align: start;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .card-title {
+                margin: 0;
+                padding: 25px 20px 0 40px;
+                font-family: Inter, Arial, Helvetica, sans-serif;
+                line-height: 1.15;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                color: white;
+            }
+            .card-description {
+                margin: 0;
+                padding: 0 20px 25px 40px;
+                font-family: Inter, Arial, Helvetica, sans-serif;
+                line-height: 22px;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                color: white;
+            }
+            @media (max-width: 959px) {
+                .card-title {
+                    font-size: 22px;
+                }
+            }
+            @media (max-width: 767px) {
+                .card-title {
+                    font-size: 20px;
+                }
+                .card-description {
+                    font-size: 14px;
+                }
+            }
+        }
+        .paint::after {
+            content: url(../../images/paint4.png);
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+        }
+        .paint:hover::after {
+            transform: scale(1.1, 1.1);
+            transition: transform 1s ease-in-out;
+        }
+        .cup::after {
+            content: url(../../images/cup4.png);
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+        }
+        .cup:hover::after {
+            transform: scale(1.1, 1.1);
+            transition: transform 1s ease-in-out;
+        }
+        .psychology::after {
+            content: url(../../images/psychology.png);
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+        }
+        .psychology:hover::after {
+            transform: scale(1.1, 1.1);
+            transition: transform 1s ease-in-out;
+        }
+        .aromo::after {
+            content: url(../../images/aromo.png);
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+        }
+        .aromo:hover::after {
+            transform: scale(1.1, 1.1);
+            transition: transform 1s ease-in-out;
+        }
+        .book::after {
+            content: url(../../images/book.png);
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+        }
+        .book:hover::after {
+            transform: scale(1.1, 1.1);
+            transition: transform 1s ease-in-out;
+        }
+        .practise::after {
+            content: url(../../images/practise.png);
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+        }
+        .practise:hover::after {
+            transform: scale(1.1, 1.1);
+            transition: transform 1s ease-in-out;
+        }
+        .master::after {
+            content: url(../../images/master.png);
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+        }
+        .master:hover::after {
+            transform: scale(1.1, 1.1);
+            transition: transform 1s ease-in-out;
+        }
+        .stream::after {
+            content: url(../../images/stream.png);
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+        }
+        .stream:hover::after {
+            transform: scale(1.1, 1.1);
+            transition: transform 1s ease-in-out;
+        }
+    }
+}
+
+@media (max-width: 1140px) {
+    .benefits-cards {
+        grid-template-columns: repeat(auto-fill, minmax(320px, max-content));
+    }
+}

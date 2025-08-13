@@ -1,0 +1,121 @@
+.panel {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  border-radius: 30px;
+  background: #fff;
+}
+
+.panel::details-content {
+opacity: 0;
+transition: opacity .6s, content-visibility 0.6s allow-discrete;
+}
+.panel[open]::details-content {
+opacity: 1;
+}
+.panel:last-child {
+  margin-bottom: 0px;
+}
+
+.question {
+  display: block;
+  padding: 20px 50px;
+  position: relative;
+  cursor: pointer;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  list-style: none;
+
+  &::-webkit-details-marker { 
+    display: none;
+  };
+
+  &::after {
+    content: url(../../images/arrow_down_2.svg);
+    position: absolute;
+    right: 30px;
+    bottom: .2px;
+    transition: transform 0.8s ease;
+  }
+  [open] &::after {
+    content: url(../../images/arrow_down_2.svg);
+    transform: scaleY(-1) translateY(5px);
+  }
+}
+
+.answer {
+  padding: 0 50px 20px;
+  margin: 0;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+@media (max-width: 767px) {
+  .question {
+    padding: 20px 30px;
+    font-size: 16px;
+  }
+  .answer {
+    font-size: 14px;
+  }
+}
+
+
+// work version for the React hooks:
+
+// .panel {
+//   background: #fff;
+//   border-radius: 30px;
+//   overflow: hidden;
+//   margin-bottom: 1.5rem;
+//   transition: all 0.3s ease;
+//   width: 100%;
+// }
+
+// .question {
+//   padding: 20px 50px;
+//   position: relative;
+//   cursor: pointer;
+//   font-family: Inter, Arial, Helvetica, sans-serif;
+//   font-size: 20px;
+//   font-weight: 500;
+//   line-height: 30px;
+// }
+
+// .arrow {
+//   position: absolute;
+//   top: 22px;
+//   right: 50px;
+//   width: 1em;
+//   height: 1em;
+//   background: url(../../images/arrow_down_2.svg) no-repeat center / 2em 2em;
+//   transition: transform 0.3s ease;
+// }
+
+// .panel.open .arrow {
+//   transform: scaleY(-1);
+// }
+
+// .answer-wrap {
+//   overflow: hidden;
+//   max-height: 0;
+//   opacity: 0;
+//   transition: max-height 0.3s ease, opacity 0.3s ease;
+// }
+
+// .panel.open .answer-wrap {
+//   opacity: 1;
+// }
+
+// .answer {
+//   padding: 0 50px 20px;
+//   margin: 0;
+//   font-family: Inter, Arial, Helvetica, sans-serif;
+//   font-size: 16px;
+//   font-weight: 300;
+//   line-height: 22px;
+// }

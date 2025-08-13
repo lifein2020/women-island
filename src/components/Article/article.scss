@@ -1,0 +1,12 @@
+.article {
+    padding: 40px 0 60px;
+    text-align: start;
+    background-color: #DCC2E7;
+    border-radius: 30px;
+}
+
+@media (max-width: 430px) {
+    .article {
+        padding: 20px 0 30px;
+    }
+}
